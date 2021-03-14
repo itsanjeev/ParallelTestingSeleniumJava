@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RegressionTests Suite" duration-ms="10639" started-at="2021-03-14T17:04:34Z" finished-at="2021-03-14T17:04:45Z">
+    <groups>
+    </groups>
+    <test name="Regression Tests" duration-ms="10639" started-at="2021-03-14T17:04:34Z" finished-at="2021-03-14T17:04:45Z">
+      <class name="com.sanjeev.tests.regressionTests.RegressionTests">
+        <test-method status="PASS" signature="loginTestFacebook()[pri:0, instance:com.sanjeev.tests.regressionTests.RegressionTests@51565ec2]" name="loginTestFacebook" duration-ms="10611" started-at="2021-03-14T17:04:34Z" description="Login with invalid username and password" finished-at="2021-03-14T17:04:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestFacebook -->
+        <test-method status="PASS" signature="loginTestFacebookWithValidUser()[pri:0, instance:com.sanjeev.tests.regressionTests.RegressionTests@51565ec2]" name="loginTestFacebookWithValidUser" duration-ms="10614" started-at="2021-03-14T17:04:34Z" description="Login with valid username and password" finished-at="2021-03-14T17:04:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestFacebookWithValidUser -->
+      </class> <!-- com.sanjeev.tests.regressionTests.RegressionTests -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- RegressionTests Suite -->
+</testng-results>
