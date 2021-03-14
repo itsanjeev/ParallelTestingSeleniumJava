@@ -1,0 +1,35 @@
+package com.sanjeev.utils.selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import com.sanjeev.utils.enums.browsers;
+
+public class localWebDriver 
+{
+	public static WebDriver getBrowser(browsers browserName) {
+
+		switch (browserName) {
+		case Chrome:
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/chromedriver.exe");
+			return new ChromeDriver();
+			break;
+
+		case IE:
+			return new InternetExplorerDriver();
+			break;
+		case Firefox:
+			return new FirefoxDriver();
+			break;
+		default:
+			
+			break;
+
+		}
+
+	}
+}

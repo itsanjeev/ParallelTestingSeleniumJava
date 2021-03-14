@@ -1,0 +1,7 @@
+<suite name = "RegressionTests Suite">
+   <test name = "Regression Tests" parallel = "methods" thread-count = "2">
+      <classes>
+         <class name = "RegressionTests" />
+      </classes>
+   </test>
+</suite>

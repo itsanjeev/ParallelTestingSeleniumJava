@@ -1,0 +1,22 @@
+package com.sanjeev.utils.selenium;
+
+import org.openqa.selenium.WebElement;
+
+public class webElementFinder 
+{
+	
+	public static WebElement getElement() throws Exception 
+	{
+		try 
+		{
+			
+		} 
+		catch (Exception ex) 
+		{
+			System.err.println("Error:" + ex);
+			throw ex;
+		}
+		
+	}
+
+}

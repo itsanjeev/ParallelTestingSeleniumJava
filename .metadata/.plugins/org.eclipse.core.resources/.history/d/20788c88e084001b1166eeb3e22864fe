@@ -1,0 +1,21 @@
+package com.sanjeev.pageObjects.facebook;
+
+import org.openqa.selenium.WebDriver;
+
+public class webBase 
+{
+	 private WebDriver _driver;
+	 
+	 public webBase(WebDriver driver) 
+	 {
+		 set_driver(driver);
+	 }
+
+	public WebDriver get_driver() {
+		return _driver;
+	}
+
+	public void set_driver(WebDriver _driver) {
+		this._driver = _driver;
+	}
+}

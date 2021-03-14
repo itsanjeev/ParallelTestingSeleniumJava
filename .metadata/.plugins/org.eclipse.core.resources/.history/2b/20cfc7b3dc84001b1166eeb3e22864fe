@@ -1,0 +1,26 @@
+package com.sanjeev.utils.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class webElementFinder 
+{
+	
+	public static WebElement getElement(WebDriver driver, By by, int timeOutInSecs) 
+	{
+		try 
+		{
+			  WebDriverWait wait = new WebDriverWait(driver, timeOutInSecs);
+			return null;
+		} 
+		catch (Exception ex) 
+		{
+			System.err.println("Error:" + ex);
+			throw ex;
+		}
+		
+	}
+
+}

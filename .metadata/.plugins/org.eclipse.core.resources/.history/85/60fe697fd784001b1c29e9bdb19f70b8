@@ -1,0 +1,8 @@
+package com.sanjeev.tests.regressionTests;
+
+public class RegressionTests {
+
+	public void loginTestFacebook() {
+		
+	}
+}

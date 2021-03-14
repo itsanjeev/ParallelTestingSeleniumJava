@@ -1,0 +1,22 @@
+package com.sanjeev.pageObjects.facebook;
+
+public class loginPage extends webBase
+{
+	public loginPage() 
+	{
+		
+	}
+	
+	public void enterUsername(String username) 
+	{
+		try 
+		{
+			
+		}
+		catch(Exception ex)
+		{
+			
+		}
+	}
+
+}

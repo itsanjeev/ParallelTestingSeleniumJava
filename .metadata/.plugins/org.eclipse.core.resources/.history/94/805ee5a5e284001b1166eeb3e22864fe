@@ -1,0 +1,19 @@
+package com.sanjeev.tests.regressionTests;
+
+import org.testng.annotations.Test;
+
+public class RegressionTests {
+
+	@Test(description="Login with invalid username and password")
+	public void loginTestFacebook() {
+		
+		try 
+		{
+			
+		}
+		catch(Exception ex) 
+		{
+			ex.printStackTrace();
+		}
+	}
+}

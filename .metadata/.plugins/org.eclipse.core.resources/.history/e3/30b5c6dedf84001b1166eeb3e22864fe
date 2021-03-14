@@ -1,0 +1,29 @@
+package com.sanjeev.utils.selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import com.sanjeev.utils.enums.browsers;
+
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
+public class localWebDriver 
+{
+	public static WebDriver getBrowser(browsers browserName) {
+
+		switch (browserName) {
+		case Chrome:
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/chromedriver.exe");
+			return new ChromeDriver();
+		case IE:
+			return new InternetExplorerDriver();		
+		case Firefox:
+			return new FirefoxDriver();
+		default:
+			throw new NotImplementedException();
+		}
+
+	}
+}

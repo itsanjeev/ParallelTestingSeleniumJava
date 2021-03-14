@@ -1,0 +1,24 @@
+package com.sanjeev.pageObjects.facebook;
+
+import org.openqa.selenium.WebDriver;
+
+public class facebookApp 
+{
+
+	private WebDriver _driver;
+	private loginPage _loginPage;
+	
+	public facebookApp(WebDriver driver) 
+	{
+		_driver = driver;
+	}
+	
+	public loginPage loginPage() 
+	{
+		if(_loginPage==null)
+		{
+			_loginPage = new loginPage(_driver);
+		}
+		return _loginPage
+	}
+}

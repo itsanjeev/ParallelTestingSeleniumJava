@@ -1,0 +1,42 @@
+package com.sanjeev.utils.selenium;
+
+import java.util.function.Function;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class webElementFinder 
+{
+	
+	public static WebElement getElement(WebDriver driver, By by, int timeOutInSecs) 
+	{
+		try 
+		{
+			  WebDriverWait wait = new WebDriverWait(driver, timeOutInSecs);
+			  wait.until();
+			return null;
+		} 
+		catch (Exception ex) 
+		{
+			System.err.println("Error:" + ex);
+			throw ex;
+		}
+		
+	}
+	
+	   private static WebElement GetElement(SearchContext searchContext,By elementLocator)
+       {
+           WebElement element = searchContext.findElement(elementLocator);
+
+
+               return element;
+           
+           throw new ElementNotVisibleException("WebElement with locator "+elementLocator+" is not visible.");
+       }
+	   
+	   private static Function<WebElement, boolean> elementVisible = element -> element;
+}

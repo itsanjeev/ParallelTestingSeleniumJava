@@ -1,0 +1,24 @@
+package com.sanjeev.tests.regressionTests;
+
+import org.testng.annotations.Test;
+import com.sanjeev.pageObjects.facebook.facebookApp;
+
+public class RegressionTests {
+
+	@Test(description="Login with invalid username and password")
+	public void loginTestFacebook() {
+		
+		try 
+		{
+			{
+				facebookApp app = new facebookApp();
+				app.navigateToUrl("http://facebook.com");
+				app.loginPage().enterUsername("abac@abc.com");
+			}
+		}
+		catch(Exception ex) 
+		{
+			ex.printStackTrace();
+		}
+	}
+}
